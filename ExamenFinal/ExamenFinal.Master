@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ExamenFinal.master.cs" Inherits="ExamenFinal.ExamenFinal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="CSS/Agentes.css" rel="stylesheet" />
+    <link href="CSS/Login.css" rel="stylesheet" />
+    <link href="CSS/Clientes.css" rel="stylesheet" />
+    <link href="CSS/MenuCircular.css" rel="stylesheet" />
+    <title>ExamenFinal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class='menu_wrapper'>
+            <div class='menu' id='Menu'>
+                <div class='round'>
+                    <a href='http://deineko.me' target='_blank'>&uarr;</a>
+                </div>
+                <div class='item item1'>
+                    <a class='Zn' href='Agente_Vista.aspx'>Agentes</a>
+                </div>
+                <div class='item item2'>
+                    <a class='Sm' href='Clientes.View.aspx'>Clientes</a>
+                </div>
+                <div class='item item3'>
+                    <a class='Ch' href='Menuprincipal.aspx'>Menú</a>
+                </div>
+                <div class='item item4'>
+                    <a class='Ot' href='Venta_View'>Ventas</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
